@@ -1,84 +1,83 @@
-# Title
+# Analysis of Movie Profitability
 
-**Authors**: Student1, Student2
+**Author**: Colm Yeh
 
 ## Overview
+This project examines the successes and failures of new movie releases for the purposes of finding the most profitable and successful movie release strategy.
 
-A one-paragraph overview of the project, including the business problem, data, methods, results and recommendations.
+Drawing from IMDB databases and the movie budgets database, this analysis provides 3 concrete business recommendations to ensure a profitable market entry for Microsoft's projects:
+
+1.) Release movies during the most profitable release months.
+
+2.) Release movies belonging to the most profitable genres.
+
+3.) Focus artistic and strategic direction on the end consumer, not critics.
 
 ## Business Problem
+Microsoft has decided to enter the video content space, and this analysis provides actionable insights on which kind of projects perform the best. Due to the capital intensive nature of making movies, choosing projects with proven releases and genres is extremely important for meaningful return on investment.
 
-Summary of the business problem you are trying to solve, and the data questions that you plan to answer in order to solve them.
-
-***
-Questions to consider:
-* What are the business's pain points related to this project?
-* How did you pick the data analysis question(s) that you did?
-* Why are these questions important from a business perspective?
-***
+To this end, this analysis seeks to answer the most profitable movie genres (1), the most profitable time of the year to release (2), and whether resources should be committed to pleasing critics and garner good ratings (3). These combined insights will allow Microsoft to choose projects with proven profitability.
 
 ## Data
+3 Databases:
 
-Describe the data being used for this project.
+IMDB Title Basics- includes movie title and genres
 
-***
-Questions to consider:
-* Where did the data come from, and how do they relate to the data analysis questions?
-* What do the data represent? Who is in the sample and what variables are included?
-* What is the target variable?
-* What are the properties of the variables you intend to use?
-***
+    Combined with movie budgets, grouped by release month to ascertain the most profitable time to release
+    
+    Combined with movie budgets, grouped by genre to find the most profitable genre across 6027 movies and 2637 genres
+    
+IMDB Title Ratings- includes average rating of movies
+
+    Combined with movie budgets to graph the correlation between profit and ratings
+    
+Movie Budgets- Movies, release date,  production budgets, domestic gross, worldwide gross, and Profit
+
+5782 movies across multiple decades, combined with both other databases
 
 ## Methods
 
-Describe the process for analyzing or modeling the data. For Phase 1, this will be descriptive analysis.
-
-***
-Questions to consider:
-* How did you prepare, analyze or model the data?
-* Why is this approach appropriate given the data and the business problem?
-***
+Key Metrics of analysis:
+  Profit,
+  Release month,
+  genre
+  
+Using barplots, scatterplots, and correlation
 
 ## Results
+### Most Profitable Release Month
 
-Present your key results. For Phase 1, this will be findings from your descriptive analysis.
+<img width="734" alt="Screen Shot 2021-10-07 at 8 55 20 AM" src="https://user-images.githubusercontent.com/87211473/138322028-d4a75c89-6048-4a2e-be99-9b132cbe68d7.png">
 
-***
-Questions to consider:
-* How do you interpret the results?
-* How confident are you that your results would generalize beyond the data you have?
-***
+### Most Profitable Genres
+![download](https://user-images.githubusercontent.com/87211473/138322161-6aa872fc-291d-40f5-b324-32fdeeb3f37a.png)
 
-Here is an example of how to embed images from your sub-folder:
+### Good Ratings do not Strongly Correlate with Profit
+![download-4](https://user-images.githubusercontent.com/87211473/138322314-a5f45fd4-06bc-4197-9230-f7a2ba683549.png)
 
-### Visual 1
-![graph1](./images/viz1.png)
 
 ## Conclusions
+This analysis points to three recommendations for Microsoft's management in selecting, producing, and releasing new projects:
 
-Provide your conclusions about the work you've done, including any limitations or next steps.
+1.) Release movies during the most historically profitable release months. Coinciding with the summer and the holidays, these months are May, June, July, November, and December (in that order).
 
-***
-Questions to consider:
-* What would you recommend the business do as a result of this work?
-* What are some reasons why your analysis might not fully solve the business problem?
-* What else could you do in the future to improve this project?
-***
+2.) Choose projects occupying the animation, adventure, or sci-fi genres. Historically, these genres have the highest profitability (in that order) within tolerable variability. With these genres, Microsoft will be best able to capture audiences and drive meaningful return on investment.
+
+3.) Focus artistic and strategic direction on the end consumer, not critics. Since ratings do not correlate strongly with profitability, investing resources into pleasing critics does not necessarily result in ROI. Instead, invest in marketing and promotion targeting the end consumer. Movie critics may examine movies on different criteria (acting caliber, cinematography, total artistic worth etc.) than the average movie goer. This systematic difference results in ratings having a very weak correlation with profit. Trying to live up to artistic perfection that critics demand is simply a waste of resources.
+
+
 
 ## For More Information
 
-Please review our full analysis in [our Jupyter Notebook](./dsc-phase1-project-template.ipynb) or our [presentation](./DS_Project_Presentation.pdf).
-
-For any additional questions, please contact **name & email, name & email**
+For any additional questions, please contact **Colm Yeh, yehcolum@gmail.com**
 
 ## Repository Structure
 
-Describe the structure of your repository and its contents, for example:
 
 ```
 ├── README.md                           <- The top-level README for reviewers of this project
 ├── dsc-phase1-project-template.ipynb   <- Narrative documentation of analysis in Jupyter notebook
-├── DS_Project_Presentation.pdf         <- PDF version of project presentation
+├── Movie Analysis.pdf                  <- PDF version of project presentation
 ├── data                                <- Both sourced externally and generated from code
 └── images                              <- Both sourced externally and generated from code
 ```
