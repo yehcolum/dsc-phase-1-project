@@ -20,21 +20,26 @@ To this end, this analysis seeks to answer the most profitable movie genres (1),
 
 ## Data
 3 Databases:
+
 IMDB Title Basics- includes movie title and genres
+
     Combined with movie budgets, grouped by release month to ascertain the most profitable time to release
+    
     Combined with movie budgets, grouped by genre to find the most profitable genre across 6027 movies and 2637 genres
     
 IMDB Title Ratings- includes average rating of movies
+
     Combined with movie budgets to graph the correlation between profit and ratings
     
 Movie Budgets- Movies, release date,  production budgets, domestic gross, worldwide gross, and Profit
+
 5782 movies across multiple decades, combined with both other databases
 
 ## Methods
 
 Key Metrics of analysis:
-  Profit
-  Release month
+  Profit,
+  Release month,
   genre
   
 Using barplots, scatterplots, and correlation
